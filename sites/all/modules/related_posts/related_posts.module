@@ -1,0 +1,8 @@
+<?php
+function related_posts_views_query_alter(&$view, &$query) {
+    if ($view->name == 'related_projects' && $view->display_handler->plugin_name == 'block') {
+    	echo("hello");
+        $query->add_where(1, 'field_product_category_taxonomy_term_data__taxonomy_index.tid', $view->args[0], '=');
+    }
+}
+?>

@@ -1,0 +1,3 @@
+name = Related Posts Fix
+description = Fixes duplated items in a related taxonomy view sorted by term weight.
+core = 7.x
